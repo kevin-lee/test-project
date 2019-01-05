@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="test-project-build"
+		revision="0.1.0-SNAPSHOT"
+		extra-scalaVersion="2.12"
+		extra-sbtVersion="1.0"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20190105221838"/>
+	<dependencies>
+		<module organisation="io.kevinlee" name="sbt-devoops">
+			<revision name="0.2.0-SNAPSHOT" status="integration" pubdate="20190105221752" resolver="local" artresolver="local" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="true" default="false" conf="compile, default(compile)" position="1">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2017" time="0" location="/Users/kevinlee/.ivy2/cache/scala_2.12/sbt_1.0/io.kevinlee/sbt-devoops/ivy-0.2.0-SNAPSHOT.xml" searched="true" original-local-location="/Users/kevinlee/.ivy2/local/io.kevinlee/sbt-devoops/scala_2.12/sbt_1.0/0.2.0-SNAPSHOT/ivys/ivy.xml" origin-is-local="true" origin-location="/Users/kevinlee/.ivy2/local/io.kevinlee/sbt-devoops/scala_2.12/sbt_1.0/0.2.0-SNAPSHOT/ivys/ivy.xml"/>
+				<caller organisation="default" name="test-project-build" conf="compile, runtime-internal, runtime, optional" rev="0.2.0-SNAPSHOT" rev-constraint-default="0.2.0-SNAPSHOT" rev-constraint-dynamic="0.2.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-devoops" type="jar" ext="jar" status="no" details="" size="187220" time="0" location="/Users/kevinlee/.ivy2/local/io.kevinlee/sbt-devoops/scala_2.12/sbt_1.0/0.2.0-SNAPSHOT/jars/sbt-devoops.jar">
+						<origin-location is-local="true" location="/Users/kevinlee/.ivy2/local/io.kevinlee/sbt-devoops/scala_2.12/sbt_1.0/0.2.0-SNAPSHOT/jars/sbt-devoops.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.1" status="release" pubdate="20111004083236" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<metadata-artifact status="no" details="" size="7655" time="0" location="/Users/kevinlee/.ivy2/cache/commons-io/commons-io/ivy-2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.1/commons-io-2.1.pom"/>
+				<caller organisation="io.kevinlee" name="sbt-devoops" conf="compile" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="0.2.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-io" type="jar" ext="jar" status="no" details="" size="163151" time="0" location="/Users/kevinlee/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.1/commons-io-2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="global-plugins">
+			<revision name="0.0" status="integration" pubdate="20190105221836" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
+				<caller organisation="default" name="test-project-build" conf="compile, runtime-internal, runtime, optional" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

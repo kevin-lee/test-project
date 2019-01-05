@@ -1,0 +1,21 @@
+[0m[[0m[31merror[0m] [0m[0mjava.lang.RuntimeException: failed] Git getting the current branch: [code: 128], [error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.[0m
+[0m[[0m[31merror[0m] [0m[0mUse '--' to separate paths from revisions, like this:[0m
+[0m[[0m[31merror[0m] [0m[0m'git <command> [<revision>...] -- [<file>...]'][0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.sys.package$.error(package.scala:26)[0m
+[0m[[0m[31merror[0m] [0m[0m	at io.kevinlee.sbt.devoops.DevOopsGitReleasePlugin$.$anonfun$projectSettings$4(DevOopsGitReleasePlugin.scala:81)[0m
+[0m[[0m[31merror[0m] [0m[0m	at io.kevinlee.sbt.devoops.DevOopsGitReleasePlugin$.$anonfun$projectSettings$4$adapted(DevOopsGitReleasePlugin.scala:46)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:44)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:40)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(System.scala:67)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:269)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:278)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:269)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:178)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:834)[0m
