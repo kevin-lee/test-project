@@ -1,0 +1,23 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: sbt GitHub Release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_AUTH_TOKEN }}
+      run: |
+        echo "GITHUB_REF: $GITHUB_REF"
+        echo ">> git branch"
+        git branch
+        echo ">> git tag"
+        git tag
