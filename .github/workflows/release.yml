@@ -12,11 +12,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: sbt GitHub Release
+    - name: tag info
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_AUTH_TOKEN }}
       run: |
+        VERSION="${GITHUB_REF#refs/tags/v}"
         echo "GITHUB_REF: $GITHUB_REF"
+        echo "tag without v: ${GITHUB_REF#refs/tags/v}"
+        echo "VERSION: $VERSION"
         echo ">> git branch"
         git branch
         echo ">> git tag"
