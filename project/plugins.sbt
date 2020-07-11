@@ -1,1 +1,3 @@
-addSbtPlugin("io.kevinlee" % "sbt-devoops" % "0.2.0-SNAPSHOT")
+addSbtPlugin("io.kevinlee" % "sbt-devoops" % "1.0.3")
+
+addSbtPlugin("io.kevinlee" % "sbt-github-pages" % "0.1.2")
